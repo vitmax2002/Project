@@ -1,0 +1,107 @@
+@font-face {
+  font-family: Raleway;
+  src: url("/public/Fonts/Raleway-Regular.ttf");
+}
+
+*{
+  font-family: Raleway;
+}
+
+:root{
+  --lighter_main: #fffefa;
+  --light_main: #71b7ea;
+  --dark_main: #091a46;
+  --darker_main: #060c26;
+}
+
+.App {
+  display: flex;
+  background-image: url("/public/Img/background.jpg");
+  background-size: cover;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  width: 450px;
+  height: 500px;
+  background-color: var(--light_main);
+  box-shadow: 0 0 10px 5px var(--dark_main);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.input{
+  box-sizing: border-box;
+  font-size: 25px;
+  padding: 5px 10px;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  background-color: #060c2680;
+  color: var(--darker_main);
+  height: 45px;
+  width: 310px;
+}
+
+.input_cont{
+  width: 310px;
+  height: 45px;
+  margin: 10px 0;
+}
+
+.button{
+  height: 30px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  padding: 20px 0px;
+  background-color: var(--dark_main);
+  color: var(--lighter_main);
+  height: 45px;
+  width: 310px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+  border: none;
+  margin-top: 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+.button:hover{
+  background-color: var(--lighter_main);
+  color: var(--dark_main);
+}
+
+.input:focus{
+  border: 3px solid var(--dark_main);
+}
+
+.message{
+  font-size: 30px;
+  color: var(--darker_main);
+  margin: 0;
+  transition: all 0.5s ease-in-out;
+  height: 30px;
+}
+
+.title{
+  font-size: 34px;
+  color: var(--darker_main);
+  padding: 10px 0;
+}
